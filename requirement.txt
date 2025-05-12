@@ -1,0 +1,5 @@
+pandas
+numpy
+feature-engine
+streamlit
+joblib
