@@ -18,7 +18,7 @@ cluster_profiles = {
 
 # UI setup
 st.set_page_config(page_title="📊 ML Customer Prediction Tool", layout="centered")
-st.title("🔍 Customer Group Predictor from Uploaded File")
+st.title("🔍 Customer Segmentation Application")
 
 # File upload
 uploaded_file = st.file_uploader("Upload Customer CSV", type=["csv"])
