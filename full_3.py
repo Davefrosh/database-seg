@@ -15,46 +15,47 @@ engine = create_engine("sqlite:///customers.db")
 # Cluster interpretation dictionary
 cluster_profiles = {
     0: {
-        "group_name": "Group (A) Diverse Mid-Value Shoppers",
-        "interpretation": "This group represents customers with varied purchasing habits. They are generally mid-value spenders but can occasionally make larger purchases. Their preference for Noodles and Noodles is notable.",
-        "reasoning_intro": "This customer likely belongs to this group because their purchasing patterns show:",
+        "group_name": "Group (A) Noodles & Pasta Enthusiasts",
+        "interpretation": "This group consists of customers who are primary consumers of Noodles and Pasta products. They mostly buy individual units and show variability in their spending and pack size choices, possibly driven by promotions or specific needs.",
+        "key_characteristics_summary": "Moderate average spending with occasional high-value purchases, mixed preference for pack sizes, predominantly Purchase Type 'Unit', strong preference for 'Noodles' and 'Pasta'.",
         "recommended_actions": [
-            "Targeted Promotions for Noodles & Noodles: Reinforce their preference with special offers, bundles, or loyalty rewards on these specific products/categories.",
-            "Encourage Higher Spends: Since they occasionally make high-value purchases, introduce premium versions or larger pack bundles of their preferred Noodles or other items in Noodles to potentially increase their average transaction value.",
-            "Cross-selling Opportunities: Based on their interest in Noodles, introduce them to related or complementary products from other categories via targeted marketing."
+            "Noodles & Pasta Promotions: Run targeted promotions, bundle offers (e.g., Noodles + Pasta combo), or loyalty rewards specifically for Noodles and Pasta products to deepen their engagement.",
+            "Introduce Variety/Premium Options: For Noodles and Pasta, introduce new flavors, healthier options, or premium versions to encourage trial and potentially increase their average transaction value.",
+            "Cross-Sell Complementary Items: Suggest items that pair well with Noodles and Pasta, such as sauces, spices, or ready-to-eat side dishes.",
+            "Family Pack Considerations: Test promotions on slightly larger or family-sized packs of their favorite Noodles/Pasta."
         ]
     },
     1: {
-        "group_name": "(Group B) Budget-Conscious, Small Pack Buyers (Ball Foods Focus)",
-        "interpretation": "This is the largest segment, composed of budget-conscious shoppers who prefer smaller, more affordable pack sizes and are loyal to Garri and ball foods. They likely represent frequent, lower-value transactions.",
-        "reasoning_intro": "This customer likely belongs to this group because their purchasing patterns show:",
+        "group_name": "Group (B) Ball Foods Regulars - Smaller Households",
+        "interpretation": "These are consistent buyers of Ball Foods, primarily Garri and Poundo Yam, purchasing individual units. Their smaller household size likely influences their consumption patterns.",
+        "key_characteristics_summary": "Moderate average spending, range of pack sizes (not exclusively small), exclusively Purchase Type 'Unit', strong loyalty to 'Ball Foods' (Garri, Poundo Yam), smaller households.",
         "recommended_actions": [
-            "Value Propositions: Emphasize value, affordability, and smaller pack convenience in marketing communications for garri and ball foods.",
-            "Loyalty Programs for Frequent Purchases: Implement loyalty programs that reward frequent, smaller purchases to retain this large customer base.",
-            "Introduce Entry-Level Products: If not already available, consider introducing more entry-level or trial-size products within ball foods to cater to their preference for small packs and potentially attract new similar customers.",
-            "Volume Discounts on Small Packs: Offer slight discounts for buying multiple small packs to gently encourage increased basket size without pushing them towards large, intimidating pack sizes."
+            "Reinforce Ball Foods Loyalty: Offer loyalty rewards or exclusive deals on Garri and Poundo Yam.",
+            "Convenience Packs for Smaller Households: Highlight or introduce pack sizes suitable for 1-2 person households for their preferred Ball Foods.",
+            "Promote Quality and Consistency: Emphasize the quality, taste, and consistent availability of these Ball Foods products.",
+            "Trial of Related Products: Gently introduce other complementary products that might appeal to Ball Foods consumers."
         ]
     },
     2: {
-        "group_name": "(Group C) High-Value, Bulk Buyers (Ball foods Focus)",
-        "interpretation": "These customers are high-value shoppers who prefer to buy in bulk, focusing on garri within ball foods. They likely make less frequent but larger purchases.",
-        "reasoning_intro": "This customer likely belongs to this group because their purchasing patterns show:",
+        "group_name": "Group (C) Ball Foods Staples - Larger Households",
+        "interpretation": "This large segment is also highly loyal to Ball Foods (Garri and Poundo Yam), purchasing individual units. The key differentiator is their much larger household size, suggesting higher overall consumption volume.",
+        "key_characteristics_summary": "Moderate average spending, range of pack sizes (slightly larger on average), exclusively Purchase Type 'Unit', strong loyalty to 'Ball Foods' (Garri, Poundo Yam), larger households.",
         "recommended_actions": [
-            "Bulk Purchase Incentives: Offer discounts, special deals, or loyalty points for bulk purchases of garri and other items in ball foods.",
-            "Subscription Services: For staple items in ball foods that they buy in bulk, consider offering subscription services for regular delivery, ensuring their continued loyalty and predictable revenue.",
-            "Highlight Cost Savings of Bulk: Marketing communications should emphasize the cost-effectiveness and convenience of buying larger pack sizes.",
-            "Premium Offerings within ball foods: Since they are high-spenders, explore opportunities for premium or enhanced versions of garri or related items in ball foods."
+            "Family-Size Value Offers: Target this group with promotions on larger unit packs or multi-unit bundles of Garri and Poundo Yam.",
+            "Subscription for Staples: Explore subscription models for regular delivery of their preferred Ball Foods.",
+            "Highlight Bulk Unit Savings: Encourage purchase of multiple units by highlighting savings.",
+            "Engage with Family-Oriented Content: Marketing communications could resonate with family values and meal planning for larger groups."
         ]
     },
     3: {
-        "group_name": "(Group D) High-Value, Specific Purchase Type Shoppers",
-        "interpretation": "This is the smallest but highest-spending segment on average. Their defining characteristic is their exclusive use of Carton. They buy moderate pack sizes and are mainly interested in ball foods, with a primary preference for garri.",
-        "reasoning_intro": "This customer likely belongs to this group because their purchasing patterns show:",
+        "group_name": "Group (D) High-Value Carton Buyers",
+        "interpretation": "This is the highest-spending segment, defined by their preference for buying in bulk via Cartons. They primarily stock up on Ball Foods (especially Garri) but also include Noodles in their bulk purchases.",
+        "key_characteristics_summary": "Highest average spending, exclusively Purchase Type 'Carton', primarily 'Ball Foods' (Garri) and also 'Noodles' in bulk, average household size.",
         "recommended_actions": [
-            "Optimize for Carton Purchase: Ensure a seamless and rewarding experience for carton. Understand the nuances of this purchase type and cater to it specifically.",
-            "Exclusive Offers for carton Users: Provide exclusive deals, early access to new products, or enhanced services for customers using carton to acknowledge their high value.",
-            "Personalized Recommendations: Given their high value and specific purchase behavior, leverage data to offer highly personalized recommendations within ball foods, potentially introducing them to other products they might like (beyond garri).",
-            "Premium Loyalty Tier: Consider a premium tier in your loyalty program specifically for these high-spending carton purchase users, offering unique benefits."
+            "Carton-Specific Loyalty Program: Implement a loyalty program that specifically rewards carton purchases.",
+            "Exclusive Carton Deals & Early Access: Provide this segment with exclusive discounts on cartons or early access to new products in carton format.",
+            "Expand Carton Offerings: Expand the range of products available in carton format, especially for popular Garri varieties and Noodles.",
+            "Understand Motivation for Carton Purchase: Conduct surveys or gather feedback to understand reasons for carton purchases (personal consumption, group buying, resale)."
         ]
     }
 }
@@ -93,7 +94,8 @@ if st.button("Predict"):
                 "Unit Pack Size": row["Unit Pack Size"],
                 "Purchase Type": row["Purchase Type"],
                 "Product Name": row["Product Name"],
-                "Category": row["Category"]
+                "Category": row["Category"],
+                "Household Size": row["Household Size"],
             }])
 
             X = encoder.transform(X)
