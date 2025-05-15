@@ -127,4 +127,4 @@ if st.button("Predict"):
         except Exception as e:
             st.error(f"❌ Prediction failed: {e}")
 else:
-    st.info("Please input customer features and click \"Predict\".")
+    st.info("Please enter a customer's first and last name to get their segmentation profile.")
