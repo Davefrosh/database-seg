@@ -6,3 +6,5 @@ joblib
 feature-engine
 fastapi
 uvicorn
+sqlalchemy
+psycopg2-binary
